@@ -1,7 +1,14 @@
 .imageBox{
+    border-style: inset;
+    border-width: 2px;
+    border-color: black;
     height: 150px;
     width: 150px;
     margin: 5px;
     padding: 0px;
+    
+}
+.imageBox:hover{
+transform: scale(1.1);
 }
 
