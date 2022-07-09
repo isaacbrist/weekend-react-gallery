@@ -1,18 +1,17 @@
+import GalleryItem from "../GalleryItem/GalleryItem"
+import './GalleryList.css';
 function GalleryList({galleryList}){
-
+console.log('In GalleryList', galleryList)
 
     return(
-        <>
-        {galleryList.map((item) => {
+        <div className='galleryContainer'>
+        {galleryList.map((item) => (
               <GalleryItem
               key={item.id}
               item={item}
             />
-            return (<h5 key={gallery.id}><img src={gallery.path}/>, {gallery.description}, likes: {gallery.likes}
-                
-                </h5>)
-            })}
-</>
+            ))}
+</div>
     )
 }
 export default GalleryList

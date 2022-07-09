@@ -23,14 +23,13 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <div>
+        <div className ='galleryFlexContainer'>
         <p>Gallery goes here</p>
         <GalleryList
         galleryList={galleryList}/>
                    
                 </div>
-        
-        <img src="images/goat_small.jpg"/>
+      
       </div>
     );
 }
