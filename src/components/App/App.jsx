@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
-
+import GalleryList from '../GalleryList/GalleryList';
 function App() {
   let [galleryList, setGalleryList] = useState([]);
   useEffect(() => {
@@ -23,7 +23,13 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
+        <div>
         <p>Gallery goes here</p>
+        <GalleryList
+        galleryList={galleryList}/>
+                   
+                </div>
+        
         <img src="images/goat_small.jpg"/>
       </div>
     );
