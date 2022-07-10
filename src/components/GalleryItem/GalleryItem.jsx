@@ -20,6 +20,7 @@ const increaseLoveBtn = () => {
 axios
   .put(`/gallery/like/${item.id}`)
   .then((response) => {
+    //refresh the gallery
     getGallery();
     console.log('in axios put')
   })
@@ -40,25 +41,13 @@ axios
 </section>
         <div> <p><button onClick={increaseLoveBtn}
         >Love it!</button></p>
-        <p>{item.likes} People love this</p>
+        {item.likes > 0?
+        <p>{item.likes} People love this</p>:
+        <p>Nobody loves this yet. :(</p>}
      </div>
      </h5>
     
     </>)
-//     <tr key={item.id}>
-// 
-//       <td>{item}</td>
-//       {/* {!itemToggleClick  ?
-//         <td className="imageItem">{item.img}</td> : */}
-//         <td> {item.description}</td> 
-      
-
-//       <td>
-//         
-        
-//       </td>
-//     </tr>
-//   );
 
  }
 
