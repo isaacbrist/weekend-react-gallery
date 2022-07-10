@@ -1,5 +1,6 @@
 import GalleryItem from "../GalleryItem/GalleryItem"
 import './GalleryList.css';
+//iterate through the gallery
 function GalleryList({galleryList, getGallery}){
 console.log('In GalleryList', galleryList)
 
