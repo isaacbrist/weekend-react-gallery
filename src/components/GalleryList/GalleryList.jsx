@@ -1,6 +1,6 @@
 import GalleryItem from "../GalleryItem/GalleryItem"
 import './GalleryList.css';
-function GalleryList({galleryList}){
+function GalleryList({galleryList, getGallery}){
 console.log('In GalleryList', galleryList)
 
     return(
@@ -9,6 +9,7 @@ console.log('In GalleryList', galleryList)
               <GalleryItem
               key={item.id}
               item={item}
+              getGallery={getGallery}
             />
             ))}
 </div>

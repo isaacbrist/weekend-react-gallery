@@ -18,6 +18,7 @@ function App() {
       })
   };
 
+
     return (
       <div className="App">
         <header className="App-header">
@@ -26,7 +27,8 @@ function App() {
         <div className ='galleryFlexContainer'>
         <p>Gallery goes here</p>
         <GalleryList
-        galleryList={galleryList}/>
+        galleryList={galleryList}
+        getGallery={getGallery}/>
                    
                 </div>
       
