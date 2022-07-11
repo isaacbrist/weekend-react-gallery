@@ -42,7 +42,7 @@ axios
         <div className='imageDescription'><p >{item.description} </p></div>
 }
 </section>
-        <div> <p><button onClick={increaseLoveBtn}
+        <div> <p><button className='likeBtn' onClick={increaseLoveBtn}
         >Love it!</button></p>
         {item.likes > 0?
         <p>{item.likes} People love this</p>:
