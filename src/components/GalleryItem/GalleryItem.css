@@ -6,9 +6,30 @@
     width: 150px;
     margin: 5px;
     padding: 0px;
-    
+    border-radius: 10px;
 }
 .imageBox:hover{
 transform: scale(1.1);
 }
 
+.imageDescription{
+    border-style: inset;
+    border-width: 2px;
+    border-color: #040404;
+    background-color: #0C7489;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.imageDescription:hover{
+    transform: scale(1.1);
+}
+.imageContainer{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    padding: 0px;
+}

@@ -4,10 +4,12 @@ import axios from 'axios';
 //GalleryItem
 function GalleryItem({item, getGallery}) {
     console.log('In GalleryItem', item)
+    //state
     const [toggle, setToggle] = useState(true);
 // toggle between photo and description
 const itemToggleClick=()=>{
 console.log('You clicked the image!')
+//toggle the image
 setToggle(!toggle)
 console.log('here is the status of toggle', toggle)
 }
@@ -30,13 +32,14 @@ axios
   });
 }
   return (
-    <>
-     <h5 key={item.id}>
-        <section  onClick={itemToggleClick}>
+    <div>
+     <div key={item.id}>
+        <section onClick={itemToggleClick} className='imageContainer'>
         {toggle ?
-        <p><img src={item.path}  className='imageBox' 
-        /></p>:
-        <p  className='imageBox'>{item.description} </p>
+        <div ><img src={item.path}  className='imageBox'
+        />
+        </div>:
+        <div className='imageDescription'><p >{item.description} </p></div>
 }
 </section>
         <div> <p><button onClick={increaseLoveBtn}
@@ -45,9 +48,8 @@ axios
         <p>{item.likes} People love this</p>:
         <p>Nobody loves this yet. :(</p>}
      </div>
-     </h5>
-    
-    </>)
+     </div>
+    </div>)
 
  }
 
