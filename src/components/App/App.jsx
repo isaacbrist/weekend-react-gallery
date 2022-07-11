@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
 function App() {
+  //state
   let [galleryList, setGalleryList] = useState([]);
   useEffect(() => {
     getGallery()
@@ -36,4 +37,3 @@ function App() {
 }
 
 export default App;
-//heroku test

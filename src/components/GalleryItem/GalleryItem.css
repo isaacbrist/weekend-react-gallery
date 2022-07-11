@@ -43,5 +43,5 @@ transform: scale(1.1);
 }
 .likeBtn:hover{
    transform: scale(1.1);
-    box-shadow: 2px 2px tomato;
+    box-shadow: 1px 1px tomato;
 }
